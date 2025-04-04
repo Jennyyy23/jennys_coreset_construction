@@ -7,8 +7,19 @@ import random
 import csv
 
 class SaveAllFrames():
-    """ 
-    This class saves all frames as png from all videos of a given directory.
+    """
+    Saves all frames as PNG images from all videos in a specified directory.
+
+    This class processes videos from a specified path and extracts frames from those 
+    that belong to a specified dataset split (e.g., train, validation, or test).
+
+    Parameters:
+        source_path (str): Path to the source directory containing video files.
+        destination_path (str): Path where extracted frames will be saved.
+        set_csv (str): Path to the CSV file listing videos and their train/test/val split.
+        set (str): Name of the split to use (e.g., "train" or "TRAIN").
+        set_column (str): Column name in `set_csv` that indicates the data split.
+        dataset (str): Dataset name. Options: "EchoNet", "ENPed", "LVH", "ImageNet".
     """
 
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

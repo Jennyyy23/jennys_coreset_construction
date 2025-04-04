@@ -3,9 +3,13 @@ import random
 import time
 
 class RandomRowSelector:
-
     """
-    A class to randomly select rows from a CSV file and write them to another CSV file.
+    Randomly selects a specified number of rows from an input CSV file and writes them to a new CSV file.
+
+    Parameters:
+        input_csv (str): Path to the source CSV file.
+        output_csv (str): Path where the output CSV file with selected rows will be saved.
+        num_rows (int): Number of rows to randomly select.
     """
 
     def __init__(self, input_csv, output_csv, num_rows):

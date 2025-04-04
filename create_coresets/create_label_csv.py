@@ -3,16 +3,18 @@ import csv
 
 class CreateLabelCSV:
     """
-    This class creates a csv-file with frame names and labels.
+    Creates a CSV file containing frame names and their corresponding labels.
+
+    Parameters:
+        folder_path (str): Path to the folder containing extracted frames.
+        source_csv (str): Path to the CSV file containing video names and labels.
+        destination_csv (str): Path where the output label CSV will be saved.
+        main_dataset (str): Name of the dataset. Options: "ImageNet" or "EchoNet".
+        label_column (str): Name of the column in `source_csv` that contains the labels.
     """
+    
     def __init__(self,folder_path, source_csv, destination_csv, main_dataset, label_column):
-        """
-        folder_path: frame folder path
-        source_csv: csv with video names and labels
-        destination_csv: where the label csv shall be saved
-        main_dataset: either "ImageNet" or "EchoNet"
-        label column: column where the label is noted in source csv
-        """
+
         dataset = "EchoNet"
 
         if main_dataset == "IN":

@@ -1,8 +1,3 @@
-# when you import a class from a script (module) in Python,
-# you automatically import any packages that were imported in that script. 
-# This is because Python loads and executes the entire script when it's imported, 
-# which includes all of its imports and definitions.
-
 from jennys_coreset_construction import JennysCoreset
 from save_all_frames import SaveAllFrames
 from random_row_sampling import RandomRowSelector
@@ -10,6 +5,13 @@ from create_label_csv import CreateLabelCSV
 from zipping import Zipping
 from regular_frame_sampling import SampleFrames
 from copy_files_from_csv import CopyFiles
+
+"""
+This script contains all the necessary functions to construct the desired coreset.
+
+It can be used to load data, apply dimensionality reduction, perform clustering, and
+save the resulting coreset and related outputs.
+"""
 
 # ************************************
 # DIMENSIONALITY REDUCTION METHODS

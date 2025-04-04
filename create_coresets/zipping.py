@@ -3,7 +3,11 @@ import zipfile
 
 class Zipping:
     """
-    This class creates a zip folder of all the files within a specified path. 
+    Creates a ZIP archive containing all files from a specified folder.
+
+    Parameters:
+        folder_path (str): Path to the folder whose contents should be zipped.
+        output_zip (str): Path where the ZIP file will be saved.
     """
 
     def __init__(self, folder_path, output_zip):

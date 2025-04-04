@@ -7,9 +7,10 @@ def select_and_copy_images(png_directory, num_images, destination_directory):
     """
     Selects a random number of images from a source directory and copies them to a destination directory.
 
-    :param png_directory: Path to the directory containing PNG images.
-    :param num_images: Number of random images to select.
-    :param destination_directory: Directory where the selected images will be copied.
+    Parameters:
+        png_directory (str): Path to the directory containing PNG images.
+        num_images (int): Number of random images to select.
+        destination_directory (str): Directory where the selected images will be copied.
     """
     
     # Create destination directory if it doesn't exist

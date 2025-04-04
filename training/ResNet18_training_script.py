@@ -107,7 +107,7 @@ else:
 # Do not forget to set normalization parameters.
 #
 # access datasets via tmpdir in bash script:
-tmpdir = os.getenv('TMPDIR') # das ist ein String und mein directory muss ich daraus basteln
+tmpdir = os.getenv('TMPDIR')
 val_set_dir = tmpdir + '/validationset'
 test_set_dir = tmpdir + '/testset'
 train_dir = tmpdir + '/trainingset'

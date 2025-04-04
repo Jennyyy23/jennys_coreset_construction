@@ -6,9 +6,16 @@ import matplotlib.image as mpimg
 import csv
 
 class SampleFrames():
-    """ 
-    This class subsamples every i-th frame from videos of a given directory 
-    where i is the sample rate set by the user
+    """
+    Subsamples every i-th frame from videos in a given directory, where `i` is the sampling rate specified by the user.
+
+    Parameters:
+        source_path (str): Path to the source directory containing video files.
+        destination_path (str): Path where the sampled frames will be saved.
+        sample_rate (int): Sampling rate (every i-th frame is selected).
+        set_csv (str): Path to the CSV file listing videos and their train/test/validation split.
+        set_name (str): Name of the split to use ("train", "validation", or "test").
+        set_column (str): Column name in `set_csv` that indicates the data split.
     """
 
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

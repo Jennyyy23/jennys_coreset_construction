@@ -4,9 +4,14 @@ import csv
 import time 
 
 
-class CopyFiles():
+class CopyFiles:
     """
-    This class copies the files specified in the first column of a csv to a given directory.
+    Copies files listed in the first column of a CSV file to a specified destination directory.
+
+    Parameters:
+        csv_file (str): Path to the CSV file containing the list of filenames (one per row, in the first column).
+        file_folder (str): Path to the folder containing the source files.
+        destination_folder (str): Path where the listed files will be copied.
     """
 
     def __init__(self, csv_file, file_folder, destination_folder):

@@ -19,12 +19,28 @@ import csv
 from ResNet_Feature_Embedding import ResNet_Feature_Embedding
 from PIL import Image
 import shutil
+
 class JennysCoreset():
-    """
-    This class constructs a frame coreset of videos based on Jenny's clustering and subset selection approach.
-    Metrics can be implemented in the method "construct_distance_matrix".
-    Initializer takes source path of all videos, frame coreset destination path and metric.
-    Currently implemented metrics: "wasserstein", "euclid", "js", "spherical", "total variation distance".
+     """
+    Constructs a frame coreset from videos based on Jenny's clustering and subset selection approach.
+    
+    The coreset is saved to the specified destination directory. Additional distance metrics can be 
+    implemented in the `construct_distance_matrix` method.
+
+    Parameters:
+        source_path (str): Path to the source directory containing video files.
+        destination_path (str): Path where the resulting frame coreset will be saved.
+        metric (str): Distance measure to use. Options: 
+                      "wasserstein", "euclid", "js", "spherical", "tvd".
+        set_csv (str): Path to the CSV file listing videos and their train/test/val split.
+        set_name (str): Name of the split to use, typically "train" or "TRAIN".
+        set_column (str): Column name in `set_csv` that indicates the data split.
+        dataset (str): Dataset name. Options: "EchoNet", "ENPed", "LVH", "ImageNet".
+        dimred (str): Dimensionality reduction method. Options: "PCA", "POD", or "FE" (feature embedding from ResNet18).
+        all_frames_path (str): Path where all video frames are stored.
+        clustering (str): Clustering method. Options: "KMedoids", "DBSCAN1", or "DBSCAN2".
+        log_csv (str): Path to the CSV log file that records run details such as elapsed time and number of selected frames.
+        count (int): Run identifier or batch number for logging purposes.
     """
 
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

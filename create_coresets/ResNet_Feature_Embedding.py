@@ -5,6 +5,16 @@ from PIL import Image
 import numpy as np
 
 class ResNet_Feature_Embedding():
+    """
+    Extracts 512-dimensional feature embeddings from images using a pre-trained ResNet18 model.
+
+    This class loads the ResNet18 model from torchvision, removes the final classification layer,
+    and uses the remaining convolutional layers as a feature extractor. It preprocesses input images
+    to match the ResNet input requirements and outputs a 512-dimensional feature vector.
+
+    Methods:
+        get_feature_embedding(img_path): Returns the feature embedding of an image as a NumPy array of shape (512,1).
+    """
 
     def __init__(self):
 
