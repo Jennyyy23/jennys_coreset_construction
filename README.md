@@ -3,10 +3,10 @@
 This repository contains the implementation of a clustering-based coreset selection method developed as part of my Master's thesis. It includes scripts for constructing coresets and training a ResNet18 classification model on various datasets and data subsets (coresets, random subsets, or full datasets).
 
 The current implementation supports the following datasets:
-- ImageNet-VidVRD
-- EchoNet-Dynamic
-- EchoNet-Pediatric
-- EchoNet-LVH
+- [ImageNet-VidVRD](https://xdshang.github.io/docs/imagenet-vidvrd.html)
+- [EchoNet-Dynamic](https://echonet.github.io/dynamic/index.html\#access)
+- [EchoNet-Pediatric](https://echonet.github.io/pediatric/index.html\#access)
+- [EchoNet-LVH](https://stanfordaimi.azurewebsites.net/datasets/5b7fcc28-579c-4285-8b72-e4238eac7bd1)
 
 ---
 
