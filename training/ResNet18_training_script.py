@@ -32,15 +32,14 @@ For a new dataset apart from ImageNet and EchoNet-Dynamic:
 4. Specify regression or classification             
 5. Set normalization parameters                 
 6. Set other configuration of training hyperparameters
-"""
 
-# # # # # # # # # # # # # # # # # # # # # # # #
-# 2do im Bash Script                          #
-# 1. Job Name                                 #
-# 2. Time                                     #
-# 3. Log-file names 2x und DIRECTORY          #
-# 4. Data directories                         #
-# # # # # # # # # # # # # # # # # # # # # # # #
+Recommendation: start via bash_script_for_training.sh
+2do in Bash Script:
+1. Specify job Name                               
+2. specify time                                     
+3. Specify log-file names 2x       
+4. Specify data directories (load into $TMPDIR)
+"""
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # ADAPT THESE PARAMETERS BEFORE STARTING 

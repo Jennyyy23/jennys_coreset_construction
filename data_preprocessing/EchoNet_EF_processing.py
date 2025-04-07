@@ -40,6 +40,7 @@ def add_categories(original_csv_file, output_csv_file):
 # EchoNet-Dynamic
 # original_csv_file = "/vol/ideadata/ep56inew/EchoNet/EchoNet-Dynamic/FileList.csv"
 # output_csv_file = "/vol/ideadata/ep56inew/EchoNet/EchoNet-Dynamic/FileList_EF_categories.csv"
+
 # EchoNet-Pediatric
 # original_csv_file = "/vol/ideadata/ep56inew/EchoNet/EchoNet-Pediatric/A4C/FileList.csv"
 # output_csv_file = "/vol/ideadata/ep56inew/EchoNet/EchoNet-Pediatric/A4C/FileList_EF_categories.csv"
